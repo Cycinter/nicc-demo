@@ -203,7 +203,7 @@
             display: inline-block;
             flex-shrink: 0;
             border: 2px solid #dee2e6;
-            margin-top: 2px;
+            margin-top: 6px;
         }
 
         .community-item .name {
@@ -2334,7 +2334,7 @@ function renderList(partnerData, nonPartnerData) {
         item.className = 'community-item';
         item.dataset.id = c.id;
         item.innerHTML = `
-            <div class="d-flex align-items-center gap-2">
+            <div class="d-flex align-items-start gap-2">
                 <span class="dot" style="background:${c.color};"></span>
                 <div class="flex-grow-1">
                     <div class="name">${c.name}</div>
@@ -2381,7 +2381,7 @@ function renderList(partnerData, nonPartnerData) {
             item.className = 'community-item non-partner';
             item.dataset.id = c.id;
             item.innerHTML = `
-                <div class="d-flex align-items-center gap-2">
+                <div class="d-flex align-items-start gap-2">
                     <span class="dot" style="background:#ccc;"></span>
                     <div class="flex-grow-1">
                         <div class="name" style="color:#666;">${c.name}</div>
